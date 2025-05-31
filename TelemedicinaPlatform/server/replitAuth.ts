@@ -9,14 +9,14 @@ import connectPg from "connect-pg-simple";
 import { storage } from "./storage";
 
 if (!process.env.REPLIT_DOMAINS) {
-  throw new Error("Environment variable REPLIT_DOMAINS not provided");
+  throw new Error("Environment variable TELEMEDICINA_DOMAINS not provided");
 }
 
 const getOidcConfig = memoize(
   async () => {
     return await client.discovery(
-      new URL(process.env.ISSUER_URL ?? "https://replit.com/oidc"),
-      process.env.REPL_ID!
+      new URL(process.env.ISSUER_URL ?? "https://telemedicina.com/"),
+      process.env.TELEME_DICINA!
     );
   },
   { maxAge: 3600 * 1000 }
