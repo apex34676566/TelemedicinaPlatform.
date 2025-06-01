@@ -174,7 +174,7 @@ The application is deployed on Replit with the following configuration:
 
 1. **Setting Up**:
    - The project uses Replit's Node.js 20 and PostgreSQL 16 modules
-   - Database is automatically provisioned through Replit
+   - Database is automatically provisioned 
    - Install dependencies with `npm install`
 
 2. **Running Locally**:
